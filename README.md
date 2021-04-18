@@ -25,7 +25,7 @@ Most of the specials and mini-episodes are included in the dataset. I decided to
 
 Regarding the preprocessing, I did a cleanup of some garbage rows, I eliminated duplicate links, I rewrote the pairs (character, role) as pairs (character, list\_of\_roles).  
 ## Replicate the data gathering process
-I also made public the scripts and code with which I scraped and preprocessed the data. If you want to replicate the data gathering process, you can use ``scraping.py`` to obtain the data from the wiki and ``preprocessing.py`` to clean the datasets. Please note that some cleaning operations were done manually. I am referring to operations of merge and delete of rows of the edgelist due to bad split on commas. The bad episodes are as follows:
+I also made public the scripts and code with which I scraped and preprocessed the data. If you want to replicate the data gathering process, you can use ``scraping.py`` to obtain the data from the wiki and ``preprocessing.py`` to clean the datasets. This two py file are available in code\_to\_replicate folder. Please note that some cleaning operations were done manually. I am referring to operations of merge and delete of rows of the edgelist due to bad split on commas. The bad episodes are as follows:
 - The Two Doctors\(exchange columns 2,3,4\).  
 - Aliens The Good The Bad The Ugly\(delete some rows\).  
 - Religion Myths and Legend\(delete some rows\).  
