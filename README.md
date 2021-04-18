@@ -8,10 +8,13 @@ Visualization of the constructed interaction graph between the characters in Gep
 ## Usage
 You can simply clone this repository and use CSVs in the dataset folder as you like.  
 If you want to easily load the doctor who interactions graph/multigraph as ``networkx`` object, you can use the ``doctorwho_dataset.py`` utilities. The utilities are described through docstrings in the py file itself. An example of using these utilities is provided in the jupyter notebook ``DEMO.ipynb``.  
+
 Please link this repo in your references.
 ## Datasets available
 The Doctor Who simple graph is an undirected weighted graph where nodes are characters with information about their roles in the series and exist an edge between node i and node j with weight w iff i and j appear in the same episode w times.  
+
 The Doctor Who multigraph is an undirected multigraph where nodes are characters with information about their roles in the series and exist an edge between node i and node j iff i and j appear in the same episode and the edge is marked with the title of the episode.  
+
 The edgelist of doctor who simple graph is available in csv in datasets folder. The edgelist of doctor who multigraph is available in csv in datasets/multigraph/ folder. The informations associated to nodes(characters), that is roles in the show, are available in datasets/roles/ folder. Two subdatasets relating to the classic and new era of Doctor Who are also available for each type of dataset mentioned.  
 ## Source and preprocessing information
 Characters, roles, interactions, episodes were obtained by scraping from the [Doctor Who Wiki](https://tardis.fandom.com/wiki/Doctor_Who_Wiki). The process by which I extracted the information can be summarized in the following steps:
@@ -30,4 +33,5 @@ I also made public the scripts and code with which I scraped and preprocessed th
 - The_Doctor_the_Widow_and_the_Wardrobe_(TV_story)\(merge columns 3,4\).  
 - Prequel The_Doctor_the_Widow_and_the_Wardrobe_(TV_story)\(delete\).  
 - She_Said_He_Said:_A_Prequel_(webcast)\(merge columns 3,4\).  
+
 If you want more information drop a mail to dileomanuel0 at gmail dot com :)
